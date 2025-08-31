@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "cv",
+	"name": "curriculum-vitae",
 	"main": "worker/index.ts",
 	"compatibility_date": "2025-08-31",
 	"assets": {
