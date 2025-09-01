@@ -52,7 +52,7 @@ export const cvData: CvData = {
     name: "Cristhian Javier Ulloa Carmona",
     email: "cristhiannica@gmail.com",
     phone: "+505 86293096",
-    location: "Leòn",
+    location: "Nicaragua/Leòn",
     linkedin: "https://www.linkedin.com/in/cristhianulloa78ba83275"
   },
   profile:
@@ -101,7 +101,7 @@ export const cvData: CvData = {
       role: "Junior Java Developer",
       company: "Clicklease LLC",
       period: "ene 2025 - presente",
-      location: "Dan McMillan, León, Nicaragua, Remoto",
+      location: "Remoto",
       bullets: []
     }
   ],

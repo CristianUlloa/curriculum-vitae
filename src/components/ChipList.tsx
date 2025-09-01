@@ -1,9 +1,20 @@
-import { Chip, Stack } from "@mui/material";
-type Props = { items: string[] };
-export default function ChipList({ items }: Props) {
+import { Stack, Chip } from "@mui/material";
+
+interface ChipListProps {
+  items: string[];
+}
+
+export default function ChipList({ items }: ChipListProps) {
   return (
-    <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
-      {items.map((t, i) => <Chip key={i} label={t} />)}
+    <Stack direction="column" spacing={1.5}>
+      {items.map((item, i) => (
+        <Chip
+          key={i}
+          label={item}
+          variant="outlined"
+          sx={{ justifyContent: "flex-start", textAlign: "left" }}
+        />
+      ))}
     </Stack>
   );
 }

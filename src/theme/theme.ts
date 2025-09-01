@@ -1,11 +1,25 @@
 import { createTheme } from "@mui/material/styles";
 
+// Paleta de 3 colores: header, sidebar, contenido
 const theme = createTheme({
   palette: {
     mode: "light",
-    primary: { main: "#111827" },
-    secondary: { main: "#4f46e5" },
-    background: { default: "#fafafa" }
+    primary: {
+      main: "#1a237e",         // Header: azul oscuro
+      contrastText: "#fff",
+    },
+    secondary: {
+      main: "#f4f4f5",         // Sidebar: gris claro
+      contrastText: "#333",
+    },
+    background: {
+      default: "#ffffff",      // Contenido: blanco
+      paper: "#ffffff",
+    },
+    text: {
+      primary: "#222",         // Texto principal
+      secondary: "#333",       // Texto sidebar
+    },
   },
   typography: {
     fontFamily: [
